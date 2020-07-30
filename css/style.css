@@ -518,8 +518,15 @@ footer.footer .move-up span:hover{
 
 /* ---------x------- Footer ----------x---------- */
 
-/*              Viewport less then or equal to 1130px            */
 
+/* Viewport bigger than 1279px */
+@media(min-width: 1279px){
+    main .site-title{
+        height: 60vh;
+    
+    }
+}
+/*              Viewport less then or equal to 1130px            */
 @media only screen and (max-width: 1130px){
     .site-content .post-content > .post-image .post-info{
         left: 2rem !important;
@@ -536,9 +543,36 @@ footer.footer .move-up span:hover{
     }
 
 }
+/* Viewport equal to 1024px */
+@media(max-width: 1024px){
+    main .site-title{
+        height: 60vh;
+    
+    }
+}
 
 /*      x       Viewport less then or equal to 1130px    x     */
-
+/* Viewport equal to 991px */
+@media(max-width: 991px){
+    main .site-title{
+        height: 80vh;
+    
+    }
+}
+/* Viewport equal to 800px */
+@media(max-width: 800px){
+    main .site-title{
+        height: 40vh;
+    
+    }
+}
+/* Viewport equal to 768px */
+@media(max-width: 768px){
+    main .site-title{
+        height: 50vh;
+    
+    }
+}
 
 /*              Viewport less then or equal to 750px            */
 
@@ -568,7 +602,9 @@ footer.footer .move-up span:hover{
 /*              Viewport less then or equal to 520px            */
 
 @media only screen and (max-width: 520px){
-   
+    main .site-title{
+        height: 60vh;
+    }
 
     .site-content .post-content > .post-image .post-info{
         display: none;
@@ -588,5 +624,13 @@ footer.footer .move-up span:hover{
     }
 
 }
+/*              Viewport less then or equal to 360px            */
+
+@media(max-width: 360px){
+    main .site-title{
+        height: 100vh;
+    }
+}
 
 /*        x      Viewport less then or equal to 520px       x     */
+
