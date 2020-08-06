@@ -1,5 +1,6 @@
 
 
+
 @import url('../css/fonts.css');
 
 
@@ -38,9 +39,7 @@ a{
     text-decoration: none;
     color: var(--text-gray);
 }
-#beaut{
-    color: rgb(248, 6, 127);
-}
+
 
 .flex-row{
     display: flex;
@@ -49,7 +48,11 @@ a{
 }
 
 #enjoy{
-    color: var(--black);
+    color: var(--white);
+}
+
+#essence{
+    font-family: 'Playfair Display', serif;
 }
 ul{
     list-style-type: none;
@@ -87,7 +90,7 @@ span{
 }
 
 .text-gray{
-    color: var(--midnight);
+    color: var(--white);
 }
 
 p{
@@ -107,7 +110,9 @@ p{
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
-
+.txt-gray{
+    color:var(--midnight)
+}
 .nav .nav-menu{    
     justify-content: space-between;
 }
@@ -183,17 +188,19 @@ p{
 
 /* --------------- Site title ---------------- */
 main .site-title{
-    
     background: var(--midnight) url("../assets/Blog-post/beauty.png") center;
     background-size: cover;
     background-position: center;
     height: 110vh;
     display: flex;
     justify-content: center;
+	width: 100vw;
+	flex-direction:column;
+	align-items:center;
+	margin: 0 auto;
 }
-#header{
-    /* background: var(--midnight) url("../assets/Blog-post/beauty.png") right; */
-}
+
+
 main .site-title .site-background{
     padding-top: 10rem;
     text-align: center;
@@ -256,7 +263,7 @@ main .blog-content span{
 }
 
 section .container .owl-nav{
-    position: absolute;
+    position: relative;
     top: 0%;
     margin: 0 auto;
     width: 100%;
@@ -378,6 +385,10 @@ main .post-content .post-title a{
 
 .site-content .sidebar .popular-post .post-content{
     padding: 1rem 0;
+}
+
+#spa{
+    color:#3f4954;
 }
 
 .site-content .sidebar .popular-post h2{
@@ -518,15 +529,8 @@ footer.footer .move-up span:hover{
 
 /* ---------x------- Footer ----------x---------- */
 
-
-/* Viewport bigger than 1279px */
-@media(min-width: 1279px){
-    main .site-title{
-        height: 60vh;
-    
-    }
-}
 /*              Viewport less then or equal to 1130px            */
+
 @media only screen and (max-width: 1130px){
     .site-content .post-content > .post-image .post-info{
         left: 2rem !important;
@@ -543,36 +547,9 @@ footer.footer .move-up span:hover{
     }
 
 }
-/* Viewport equal to 1024px */
-@media(max-width: 1024px){
-    main .site-title{
-        height: 60vh;
-    
-    }
-}
 
 /*      x       Viewport less then or equal to 1130px    x     */
-/* Viewport equal to 991px */
-@media(max-width: 991px){
-    main .site-title{
-        height: 80vh;
-    
-    }
-}
-/* Viewport equal to 800px */
-@media(max-width: 800px){
-    main .site-title{
-        height: 40vh;
-    
-    }
-}
-/* Viewport equal to 768px */
-@media(max-width: 768px){
-    main .site-title{
-        height: 50vh;
-    
-    }
-}
+
 
 /*              Viewport less then or equal to 750px            */
 
@@ -602,12 +579,14 @@ footer.footer .move-up span:hover{
 /*              Viewport less then or equal to 520px            */
 
 @media only screen and (max-width: 520px){
-    main .site-title{
-        height: 60vh;
-    }
+   
 
     .site-content .post-content > .post-image .post-info{
         display: none;
+    }
+
+    main .site-title{
+        background-position: 50%;
     }
 
     footer.footer .container > div{
@@ -624,13 +603,7 @@ footer.footer .move-up span:hover{
     }
 
 }
-/*              Viewport less then or equal to 360px            */
 
-@media(max-width: 360px){
-    main .site-title{
-        height: 100vh;
-    }
-}
+
 
 /*        x      Viewport less then or equal to 520px       x     */
-
