@@ -539,7 +539,7 @@ footer.footer .move-up span:hover{
     }
 
     .site-content .sidebar .popular-post .post-info{
-        display: none !important;
+        /* display: none !important; */
     }
 
     footer.footer .container{
@@ -582,7 +582,7 @@ footer.footer .move-up span:hover{
    
 
     .site-content .post-content > .post-image .post-info{
-        display: none;
+        /* display: none; */
     }
 
     main .site-title{
